@@ -4,6 +4,7 @@ def my_find(collection)
   i = 0
   while i < collection.length
     return collection[i] if yield(collection[i])
+    #will return the first collection item that passes the block 
       i += 1
   end
 end
